@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combination Generator</title>
+	<style type="text/css">
+		* {
+			font-family: 'Lato';
+		}
+		body {
+			padding:50px;
+		}
+		pre {
+			font-family: monospace;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<h1>Combination Generator</h1>
+		<div class="button-generator">
+			<button type="button" onclick="inputHewan()">Input Hewan</button>
+			<button type="button" onclick="inputBuah()">Input Buah</button>
+			<button type="button" onclick="inputWarna()">Input Warna</button><br/><br/>
+			<button type="button" onclick="inputHewanBatch()">Input Hewan Batch</button><br/>
+			<small>*Khusus untuk proses case 3 agar input langsung valid. Tes validasi gunakan input hewan biasa.</small>
+		</div>
+		<div class="input-container">
+			<h2>Input</h2>
+			<pre id="input">
+			</pre>
+		</div>
+		<button type="button" onclick="clearInput()">Bersihkan Input</button>
+		<br/><br/>
+		<div class="button-generator">
+			<button type="button" onclick="processCase1()">Proses Case 1</button>
+			<button type="button" onclick="processCase2()">Proses Case 2</button>
+			<button type="button" onclick="processCase3()">Proses Case 3</button>
+		</div>
+		<div class="output-container">
+			<h2>Output</h2>
+			<pre id="output">
+			</pre>
+		</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
